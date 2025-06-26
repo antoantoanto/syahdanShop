@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SyahdanShop - Toko Bunga dan Tanaman</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">Syahdan<span>Shop</span></div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#products">Produk</a></li>
+                    <li><a href="#about">Tentang Kami</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+            </nav>
+            <div class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Selamat Datang di SyahdanShop</h1>
+            <p>Temukan berbagai macam bunga dan tanaman hias terbaik untuk mempercantik rumah Anda</p>
+            <a href="#products" class="btn">Lihat Produk</a>
+        </div>
+    </section>
+
+    <section id="products" class="products">
+        <div class="container">
+            <h2>Produk Kami</h2>
+            <div class="product-filters">
+                <button class="filter-btn active" data-category="all">Semua</button>
+                <button class="filter-btn" data-category="bunga">Bunga</button>
+                <button class="filter-btn" data-category="tanaman">Tanaman Hias</button>
+            </div>
+            <div class="product-grid" id="product-container">
+                <!-- Products will be loaded here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Tentang Kami</h2>
+            <p>SyahdanShop adalah toko online yang menyediakan berbagai macam bunga dan tanaman hias berkualitas tinggi. Kami berkomitmen untuk memberikan produk terbaik dengan harga terjangkau.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Hubungi Kami</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Jl. Kenangan No. 123, Ulujami</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <p>+62 812 3456 7890</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>syahdan@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 SyahdanShop. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Shopping Cart Modal -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Keranjang Belanja</h2>
+            <div id="cart-items">
+                <!-- Cart items will be loaded here -->
+                <p class="empty-cart">Keranjang belanja Anda kosong</p>
+            </div>
+            <div class="cart-total">
+                <p>Total: <span id="cart-total">Rp 0</span></p>
+                <button id="checkout-btn" class="btn">Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
